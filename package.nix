@@ -6,11 +6,11 @@
 }:
 let
   pname = "lmstudio";
-  version = "0.4.1-1";
+  version = "0.4.6-1";
 
   src = fetchurl {
     url = "https://installers.lmstudio.ai/linux/x64/${version}/LM-Studio-${version}-x64.AppImage";
-    hash = "sha256-0Y4XjK3vfWeY8Z5tQfM6KX4modKFCRy8MNqCUtGKRvA=";
+    hash = "sha256-FHZ64zmnqHrQyX4ift/lVUzW+HiCVkXpWVa4hkssX/k=";
   };
 
   appimageContents = appimageTools.extractType2 { inherit pname version src; };
